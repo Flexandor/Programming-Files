@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+
+    <body>
+        <button onclick="changeColour()"> Push Me! </button>
+        <button onclick="changeSize()" id = "button"> Sizeify!</button>
+    </body>
+
+    <script>
+        function getRandomColour(){
+            let letters = '0123456789ABCDEF';
+            let colour = '#';
+            for (let i = 0; i < 6; i++) {
+                colour += letters[Math.floor(Math.random() * 16)];
+            }
+            return colour;
+        }
+
+        function changeColour(){
+            let newColour = getRandomColour();
+            document.body.style.backgroundColor = newColour;
+        }
+
+        function getRandomSize(min, max){
+            return Math.floor(Math.random() * (max - min + 1) + min);
+        }
+
+        function changeSize(){
+            let newSize = getRandomSize(5, 99)
+            document.getElementById("button").style.width = newSize + "%";
+        }
+    </script>
+</html>
