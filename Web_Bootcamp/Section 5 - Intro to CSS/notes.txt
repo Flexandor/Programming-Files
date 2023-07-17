@@ -1,0 +1,6 @@
+CSS - Cascading Style Sheet
+HTML - Hyper Text Markup Language
+Sass - Syntactically Awesome Style Sheet
+Less - Leaner Style Sheet
+
+Leave styling for the CSS and leave the content in the HTML.
