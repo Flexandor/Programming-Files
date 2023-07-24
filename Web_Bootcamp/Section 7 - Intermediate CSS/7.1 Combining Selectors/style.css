@@ -1,0 +1,23 @@
+/* Write your code here: */
+
+h1,
+h2 {
+  color: blueviolet;
+}
+
+div > p {
+  color: firebrick;
+}
+
+div li {
+  /* Descendant selector selects any li decendants in the div ancestor */
+  color: blue;
+}
+
+li.done {
+  color: seagreen;
+}
+
+ul p.done {
+  font-size: 0.5rem;
+}
