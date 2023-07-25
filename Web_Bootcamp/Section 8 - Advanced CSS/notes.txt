@@ -1,0 +1,23 @@
+Block - The element takes up the full width of the display.
+Inline - The element takes up it's content width, but does not extend the whole width of the display.
+Inline-Block - The block lets us set the height and width, the inline lets the elements occupy the same line.
+None - Makes elements on the page disapear
+
+-------------------------
+
+Float - A property which makes an element "float" to the side that's assigned. Therefore float: left means that the img floats to the left and so other elements can fill in the space to the right of it.
+Clear - This property clears any responsibility of the element to wrap around any other elements. Therefore clear: both stops it wrapping on both sides.
+
+In modern webdev they don't actually use floats to move divs into their position etc.
+
+
+-------------------------
+
+@media (max-width: 600px) {
+    /* CSS for screens below or equal to 600px wide */
+}
+The above says look inside here to apply the CSS on a website that is 600px wide or less.
+
+1fr 1fr, means we have two columns here that are the same fraction of the screen. Therefore two equal columns.
+Grid applies to 2d layouts, columns and rows.
+Flexbox applies to 1d layouts, so controlling how a row of elements works.
