@@ -1,0 +1,24 @@
+grid-template-rows: 100px auto - This will mean the first row is 100px, the second will fit to the size of the content.
+grid-template-columns: 200px auto - This will mean the first column is 200px, the second will fit to fill the rest of the whole 100% screen.
+
+For the above, we can us fr, which is the fractional size. E.g:
+grid-template-columns: 1fr 2fr - With this the second row will always be double the size of the first.
+
+grid-template-columns: 200px minmax(400px,800px) - This says the first column is 200px wide, the second column can be anywhere between 400 and 800px.
+
+grid-template-columns: repeat(2, 100px) - This says we have 2 columns at 100px each.
+
+grid-auto-rows: 300px - This is used to set the size for any additional rows (or columns) that are added that are not already defined.
+
+
+------------------
+
+Div that contians the grid, is the grid container.
+Lines that separate grid tracks (columns and rows) are the grid lines.
+Grid:
+    Lines
+    Tracks
+    Cells
+    Container
+    Items
+
