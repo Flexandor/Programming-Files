@@ -1,0 +1,21 @@
+vh = Viewport height
+Sets the height of the view size height.
+
+align-self can be used on a unique item.
+
+flex-basis is the initial starting value.
+flex-basis default is auto and looks at the content in each item.
+If you set flex-basis to 0, it'll keep each item the same size.
+
+flex: 1 1 0; - Grow, Shrink, Flex-basis
+The above can be written as flex: 1.
+
+flex: 2 == flex: 2 2 0
+flex: 3 == flex: 3 3 0
+
+
+--------------
+
+Sizing priority: (Right is more important)
+
+Content width < Width < flex-basis < min-width/max-width
