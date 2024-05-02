@@ -1,0 +1,13 @@
+1px - 1/96th of an inch
+1pt - 1/72nd of an inch
+1em - 100% of parent
+e.g.
+<body> 20px
+    <h1> Hello </h1> 1em -This will be 20px. If it was 2em, it would be 20px.
+</body>
+
+1rem - 100% of root - Same as above but relative to the root. Usually the outside <html> tag. - This is a more consistent way of changing the sizing.
+
+Border is a border aroud a element.
+Padding is the padding between the element and the border.
+Margin is the part that's outside of the border, thus space between two different elements.

@@ -1,0 +1,55 @@
+CSS - Cascading Style Sheet
+HTML - Hyper Text Markup Language
+Sass - Syntactically Awesome Style Sheet
+Less - Leaner Style Sheet
+
+Leave styling for the CSS and leave the content in the HTML.
+
+Inline CSS:
+<html style="background: blue"></html>
+The style attribute goes inside the openening tag for HTML
+
+Internal CSS:
+This is done through a special HTML <style> tag.
+Eg:
+<html>
+    <head>
+        <style>
+            html {
+                background: red;
+            }
+        </style>
+    </head>
+</html>
+
+External CSS:
+For multipage projects you should use External CSS.
+This means there's a indipendent file normally called "style.css". In the styles.css sheet you would have things such as:
+html{
+    background: green
+}
+
+Then in the index.html file you'd use a new <link> tag (which is self closing) to apply to styling.
+Eg:
+<html>
+    <head>
+        <link 
+            rel="stylesheet"      -This is the relationship, what is the role of this thing we're linking to.
+            href="./style.css"   -Where is the thing we're linking to stored?
+        />
+    </head>
+</html>
+
+
+
+
+
+----------------------------------------------------
+
+.note the dot allows you to look at elements with a specific class.
+
+#id the # makes the CSS apply to a specific element with the ID following the #
+
+li[here] the here is the attribute within the list element. E.g. Value = "4". This will only style those li elements with this value in the attribute.
+
+* selects all elements.

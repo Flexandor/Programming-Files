@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body> <!-- onload="alert('Hello')" This is inline JS.-->
+    <h1>Hello</h1>
+
+    <!--<script type="text/javascript"> alert("Hello")</script> This is internal JS.-->
+
+    <script src="index.js" charset="utf-8"></script> <!--JS Scripts generally want to be at the end as the other elements have to be created first before we change the.-->
+    
+</body>
+</html>
+
+<!--document.getElementsByTagName("h1")
+document.getElementsByClassName("btn") both of these return arrays of items
+document.getElementById("title") this should only be 1 as should only be 1 Id for each element
+document.querySelector("li a") selects the anchor tag within an li
+document.querySelectorAll() this gets all elements with specific selectors.
+document.querySelector("li a").style.colour = red;
+document.querySelector("button").classList.add("invisible") - We do this so that we can then reference this class in the css. We can change style this way using JS. This keeps the Separation of Concerns.
+document.querySelector("h1").innerHTML actually gets all the HTMl so it can add in new html e.g:
+document.querySelector("h1").innerHTML = <em> Hello </em>
+To get just the text, you can use document.querySelector("h1").innerText-->

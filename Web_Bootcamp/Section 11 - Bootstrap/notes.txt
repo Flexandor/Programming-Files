@@ -1,0 +1,6 @@
+Bootstrap has a 12 column system.
+12 columns per row.
+
+By default bootstrap tries to give equal column widths in each row
+
+col-2 or col-4 means that we have a column that takes up 2 columns, or 4.

@@ -1,0 +1,43 @@
+<li id="first-id" class="first-class" draggable>
+
+li {colour:blue;} - Element
+.first-class {color:red;} - Class (can have multiple different Elements with this class, so more specific, but not most.)
+li[draggable] {color: purple;} - Attribute (Similar to Class but slightly more specific)
+#first-id {color: orange;} - ID - Most specific as you should only have one element with one perticular id name.
+
+External - Least specific - can be applied to many different webpages
+Internal - Middle specific - only for one webpage
+Inline - Most specific - Only for that one element.
+If all three of the above targetted the same element, the inline one would be the one to work.
+
+color: red;
+color: green !important; - This important keyword forces this to be the style that is taken.
+
+Position
+Specificity
+Type
+Important
+From bottom to top is the order in which things will be applied. E.g. Position is less relevant than Specificity.
+
+You can chain selectors.
+Selector > selector - Direct decendent of first selector
+Selector selector - Finding any decendent of a given ancestor
+SelectorSelector - Finding a specific combination of elements/classes/IDs
+
+
+------------------------
+
+CSS Positions
+-Static Positioning:
+    HTML default flow.
+
+-Relative Positioning:
+    The items position relative to it's default position.
+
+Absolute Positioning:
+    The position relative to the nearest positioned ancestor or top left corner of the webpage.
+
+Each item has a z index which is it's position in the z axis.
+
+Fixed Position:
+    -Position relative to the top left corner of the BROWSER window. That way when you scroll it stays in the same location.
