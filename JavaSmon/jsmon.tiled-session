@@ -1,0 +1,43 @@
+{
+    "Map/SizeTest": {
+        "height": 4300,
+        "width": 2
+    },
+    "activeFile": "assets/pokemonStyleMap.tmx",
+    "expandedProjectPaths": [
+    ],
+    "fileStates": {
+        "assets/backgroundAssets.tsx": {
+            "scaleInDock": 3,
+            "scaleInEditor": 1
+        },
+        "assets/pokemonStyleMap.tmx": {
+            "scale": 0.75,
+            "selectedLayer": 1,
+            "viewCenter": {
+                "x": -100,
+                "y": 240.66666666666663
+            }
+        }
+    },
+    "last.imagePath": "E:/Programming_Files/JavaSmon/assets",
+    "map.height": 40,
+    "map.lastUsedFormat": "tmx",
+    "map.tileHeight": 12,
+    "map.tileWidth": 12,
+    "map.width": 70,
+    "openFiles": [
+        "assets/backgroundAssets.tsx",
+        "assets/pokemonStyleMap.tmx"
+    ],
+    "project": "jsmon.tiled-project",
+    "recentFiles": [
+        "assets/backgroundAssets.tsx",
+        "assets/pokemonStyleMap.tmx"
+    ],
+    "tileset.lastUsedFormat": "tsx",
+    "tileset.tileSize": {
+        "height": 12,
+        "width": 12
+    }
+}
