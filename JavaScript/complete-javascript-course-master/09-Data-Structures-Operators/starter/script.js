@@ -8,9 +8,15 @@ const flights =
 const restaurant = {
   name: 'Classico Italiano',
   location: 'Via Angelo Tavanti 23, Firenze, Italy',
-  categories: ['Italian', 'Pizzeria', 'Vegetarian', 'Organic'],
+  categories: ['Italian', 'Pizzeria', 'Vegetarian', 'Organic', 'Meat'],
   starterMenu: ['Focaccia', 'Bruschetta', 'Garlic Bread', 'Caprese Salad'],
   mainMenu: ['Pizza', 'Pasta', 'Risotto'],
+
+  order: function (starterIndex, mainIndex) {
+    return [this.starterMenu[starterIndex], this.mainMenu[mainIndex]];
+  },
+
+  orderDeliver
 
   openingHours: {
     thu: {
@@ -27,3 +33,49 @@ const restaurant = {
     },
   },
 };
+
+let [first, second] = restaurant.categories;
+const [, , third, , fifth] = restaurant.categories;
+
+console.log(first, second, third, fifth);
+
+[second, first] = [first, second];
+
+const [starter, main] = restaurant.order(2, 0);
+
+//Nested destructuring
+const nested = [2, 4, [5, 6]];
+const [i, , [j, k]] = nested;
+
+console.log(i, j, k);
+
+//Default values
+const [p = 1, q = 1, r = 1] = [8, 2];
+console.log(p, q, r);
+
+const { name, categories, openingHours } = restaurant;
+console.log(name, categories, openingHours);
+
+const {
+  name: restaurantName,
+  openingHours: hours,
+  categories: tags,
+} = restaurant;
+console.log(restaurantName, hours, tags);
+
+//setting default values
+const { menu = [], starterMenu: starters = [] } = restaurant;
+console.log(menu, starters);
+
+//mutating variables
+let a = 111;
+let b = 999;
+const obj = { a: 23, b: 7, c: 14 };
+({ a, b } = obj); //have to wrap curly braces in parenthesis
+console.log(a, b);
+
+//Nested objects
+const {
+  fri: { open, close },
+} = openingHours;
+console.log(open, close);
